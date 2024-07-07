@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    container_name: server 
+    ports:
+      - "3001:3001"
+    environment: 
+      - mongodb+srv://hemasriv8888:Vuheka%401234@cluster1.sklwhtm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1
+  client:
+    build: ./client
+    container_name: client
+    ports :
+    - "3000:80"

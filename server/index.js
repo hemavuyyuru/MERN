@@ -49,5 +49,8 @@ async function StartServer(){
     app.listen(port,()=>{console.log(`Server live` )})
 }
 
-  
+function Testing(){
+    return 0;
+}  
+Testing();
 StartServer();
